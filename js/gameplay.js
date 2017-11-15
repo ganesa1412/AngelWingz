@@ -80,10 +80,11 @@ var GameState = {
     ufo.scale.setTo(0.4, 0.4);
     ufo_life = 250;
 
-    this.candibar = new HealthBar(this.game, {width: 200, height: 25, x: 195, y: 35, bg:{color: '#ecf1f0'}, bar:{color: '#00a2e9'}});
-    this.alienbar = new HealthBar(this.game, {width: 200, height: 25, x: 430, y: 35, bg:{color: '#ecf1f0'}, bar:{color: '#e62928'}});
-    vs = game.add.sprite(290, 10, 'vs');
-    vs.scale.setTo(0.7,0.7);
+
+    vs = game.add.sprite(70, 5, 'vs');
+    vs.scale.setTo(0.18,0.18);
+    this.candibar = new HealthBar(this.game, {width: 150, height: 20, x: 198, y: 37, bg:{color: '#ecf1f0'}, bar:{color: '#00a2e9'}});
+    this.alienbar = new HealthBar(this.game, {width: 150, height: 20, x: 428, y: 33, bg:{color: '#ecf1f0'}, bar:{color: '#e62928'}});
 
 
     var alien_count = 0;

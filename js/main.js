@@ -30,7 +30,7 @@ var GameState = {
     play.scale.setTo(0.104, 0.104);
     about = game.add.button(400, 215, 'btn_about',function() {  window.location.href = "about.html"; }, this);
     about.scale.setTo(0.1, 0.1);
-    option = game.add.sprite(495, 215, 'btn_exit');
+    option = game.add.button(495, 215, 'btn_exit',function(){ navigator.app.exitApp(); }, this);
     option.scale.setTo(0.1, 0.1);
     
     alien = game.add.sprite(10, 160, 'alien_menu');
